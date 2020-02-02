@@ -4,3 +4,13 @@ body, a {
     font-family: "Courier New";
     color: #3f0;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+}
