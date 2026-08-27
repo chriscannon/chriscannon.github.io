@@ -3,12 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chess Training</title>
-  <meta http-equiv="refresh" content="0; url=/chess-training/">
-  <link rel="canonical" href="https://cannon.codes/chess-training/">
-  <script>window.location.replace('/chess-training/');</script>
+  <title>ChrisCannoli Chess Training</title>
+  <meta name="description" content="Chess training plan, rapid-game reviews, and coach-game notes for ChrisCannoli.">
+  <style>
+    :root { color-scheme: light dark; --max: 920px; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; }
+    main { max-width: var(--max); margin: 0 auto; padding: 32px 20px 64px; }
+    nav { display:flex; gap:16px; flex-wrap:wrap; margin: 0 0 32px; }
+    nav a, a { color: inherit; }
+    h1 { font-size: 2.2rem; margin-bottom: .25rem; }
+    h2 { margin-top: 2.5rem; border-bottom: 1px solid rgba(127,127,127,.35); padding-bottom: .35rem; }
+    h3 { margin-bottom: .35rem; }
+    .muted { opacity: .7; }
+    .card { border: 1px solid rgba(127,127,127,.35); border-radius: 12px; padding: 18px; margin: 14px 0; }
+    .meta { display:flex; gap:10px 18px; flex-wrap:wrap; font-size:.95rem; opacity:.8; margin-bottom:10px; }
+    table { width:100%; border-collapse:collapse; }
+    th,td { text-align:left; padding:9px 8px; border-bottom:1px solid rgba(127,127,127,.25); vertical-align:top; }
+    ul { padding-left: 1.3rem; }
+    .result-win { font-weight:700; }
+    footer { margin-top:48px; opacity:.65; font-size:.9rem; }
+  </style>
 </head>
 <body>
-  <p>Redirecting to <a href="/chess-training/">Chess Training</a>…</p>
+<main>
+  <nav><a href="#plan">Study plan</a><a href="#rapid">Rated rapid</a><a href="#coach">Coach games</a></nav>
+
+  <h1>Chess Training</h1>
+  <p class="muted">Training log for <strong>ChrisCannoli</strong> on Chess.com and Lichess. The goal is to identify recurring weaknesses and strengths from serious games and use them to guide study.</p>
+
+  <h2 id="plan">Current study plan</h2>
+  <table>
+    <tr><th>Day</th><th>Training</th></tr>
+    <tr><td>Monday</td><td>Play 15+10 rapid</td></tr>
+    <tr><td>Tuesday</td><td>Coach puzzles</td></tr>
+    <tr><td>Wednesday</td><td>Lesson with coach, primarily reviewing Tuesday's puzzles</td></tr>
+    <tr><td>Thursday</td><td>Day off</td></tr>
+    <tr><td>Friday</td><td>Play 15+10 rapid</td></tr>
+    <tr><td>Saturday</td><td>ChessMood — Tactic Ninja</td></tr>
+    <tr><td>Sunday</td><td>ChessMood — Endgame Roadmap review; later double down on Tactic Ninja</td></tr>
+  </table>
+
+  <h2 id="rapid">Rated rapid games</h2>
+
+  <article class="card">
+    <h3>Chess.com vs Marcyn8er</h3>
+    <div class="meta"><span>Aug 24, 2026</span><span class="result-win">Win</span><span>Black</span><span>15+10</span><span>1204 vs 1168</span></div>
+    <p><strong>Opening:</strong> Italian Game: Classical Variation, Greco Gambit, Traditional Line</p>
+    <p><strong>What went well:</strong> The game fell directly into prepared opening theory, and Chris immediately capitalized when the opponent hung the queen.</p>
+    <p><strong>Turning point:</strong> Opponent hung the queen. Time trouble was not applicable because the game ended after 17 moves.</p>
+    <p><a href="https://www.chess.com/game/live/173471446534">Open game</a></p>
+  </article>
+
+  <article class="card">
+    <h3>Lichess Vp2DZ68Q</h3>
+    <div class="meta"><span>Aug 24, 2026</span><span class="result-win">Win</span><span>Black</span><span>10+5</span></div>
+    <p><strong>Opening:</strong> Scotch Game: Scotch Gambit</p>
+    <p><strong>Mistakes:</strong> Missed a knight fork of both enemy rooks and entered mild time trouble.</p>
+    <p><strong>What went well:</strong> Found a decisive double attack on a knight that could not move because moving it would allow checkmate.</p>
+    <p><strong>Turning points:</strong> Opponent gave up bishop + knight for rook in the opening, then later dropped a pawn.</p>
+    <p><a href="https://lichess.org/Vp2DZ68Q/black">Open game</a></p>
+  </article>
+
+  <article class="card">
+    <h3>Chess.com vs chillo123456</h3>
+    <div class="meta"><span>Aug 21, 2026</span><span>Draw — insufficient material</span><span>Black</span><span>15+10</span><span>1204 vs 1202</span></div>
+    <p><strong>Opening:</strong> King's Pawn: Whale Variation</p>
+    <p><strong>Mistakes:</strong> Played too slowly, gave up a large rook+bishop vs rook+knight endgame advantage, and dropped a pawn.</p>
+    <p><strong>What went well:</strong> Handled an unfamiliar opening well, used tactics to reach a two-pawn advantage, and found decent moves under time pressure.</p>
+    <p><strong>Turning point:</strong> Dropping a pawn in the endgame.</p>
+    <p><a href="https://www.chess.com/analysis/game/live/173342297694/review">Open game</a></p>
+  </article>
+
+  <article class="card">
+    <h3>Lichess vi1Vv7Ox</h3>
+    <div class="meta"><span>Aug 21, 2026</span><span class="result-win">Win</span><span>Black</span><span>10+5</span></div>
+    <p><strong>Opening:</strong> Italian Game</p>
+    <p><strong>What went well:</strong> Accurate opening, middlegame, and endgame play; steady pressure against a weakened king; queen-and-rook infiltration onto the second rank.</p>
+    <p><strong>Turning point:</strong> Opponent allowed the queen and rook onto the second rank.</p>
+    <p><strong>Primary reason for result:</strong> Sustained pressure against a king weakened by two advanced pawns.</p>
+    <p><a href="https://lichess.org/vi1Vv7Ox">Open game</a></p>
+  </article>
+
+  <h2 id="coach">Coach games</h2>
+  <article class="card">
+    <h3>Daily game vs Joshukid</h3>
+    <div class="meta"><span>Aug 27, 2026</span><span>Loss by resignation, move 34</span><span>White</span><span>5 days/move</span><span>Daily: 1221 vs 1598</span><span>Coach blitz: 2787</span></div>
+    <p><strong>Opening:</strong> French Defense: Rubinstein Variation — unfamiliar. Chris is more accustomed to Open or Closed Tarrasch positions.</p>
+    <p><strong>Mistakes:</strong></p>
+    <ul>
+      <li>Did not choose the fianchetto/opposite-side-castling setup that would have better challenged Black's likely setup.</li>
+      <li>Declined a free a-pawn because of concern about rook activity on the a-file, even though Black had no adequate compensation and White had not castled.</li>
+      <li>Pushed pawns around a pinned bishop, losing a pawn and allowing an outside passed pawn.</li>
+    </ul>
+    <p><strong>Biggest turning point:</strong> The pawn pushes around the pinned bishop that lost a pawn and created the outside passer.</p>
+    <p><strong>Main lesson:</strong> In unfamiliar positions, judge concrete compensation rather than avoiding material gains because of vague activity; be especially careful with pawn moves around pinned pieces.</p>
+    <p><a href="https://www.chess.com/game/daily/1014868858">Open game</a></p>
+  </article>
+
+  <footer>Source training records are maintained in the chess-training GitHub repository.</footer>
+</main>
 </body>
 </html>
