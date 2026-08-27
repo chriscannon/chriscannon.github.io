@@ -29,9 +29,13 @@
     .result-win { color:#198754; }
     .result-loss { color:#dc3545; }
     .result-draw { color:#6c757d; }
-    .filters { display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 20px; }
+    .filter-panel { display:flex; gap:14px 24px; flex-wrap:wrap; align-items:flex-end; margin:14px 0 20px; }
+    .filter-group { display:flex; flex-direction:column; gap:7px; }
+    .filter-label { font-size:.86rem; font-weight:800; opacity:.8; text-transform:uppercase; letter-spacing:.04em; }
+    .filters { display:flex; gap:8px; flex-wrap:wrap; }
     .filter-btn { appearance:none; border:1px solid rgba(127,127,127,.45); border-radius:999px; padding:7px 13px; background:transparent; color:inherit; font:inherit; font-weight:650; cursor:pointer; }
     .filter-btn[aria-pressed="true"] { border-width:2px; font-weight:800; }
+    .opening-select { min-width:min(360px, 82vw); max-width:100%; border:1px solid rgba(127,127,127,.45); border-radius:10px; padding:8px 10px; background:transparent; color:inherit; font:inherit; }
     .tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:8px; }
     .tag { border:1px solid rgba(127,127,127,.35); border-radius:999px; padding:3px 9px; font-size:.85rem; }
     .game-link { display:inline-block; margin-top:10px; font-weight:700; }
@@ -57,18 +61,29 @@
     <tr><td>Sunday</td><td>ChessMood — Endgame Roadmap review; later double down on Tactic Ninja</td></tr>
   </table>
 
-  <h2>Game results</h2>
-  <div class="filters" role="group" aria-label="Filter games by result">
-    <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
-    <button class="filter-btn" type="button" data-filter="win" aria-pressed="false">Wins</button>
-    <button class="filter-btn" type="button" data-filter="loss" aria-pressed="false">Losses</button>
-    <button class="filter-btn" type="button" data-filter="draw" aria-pressed="false">Draws</button>
+  <h2>Game filters</h2>
+  <div class="filter-panel">
+    <div class="filter-group">
+      <span class="filter-label">Result</span>
+      <div class="filters" role="group" aria-label="Filter games by result">
+        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" type="button" data-filter="win" aria-pressed="false">Wins</button>
+        <button class="filter-btn" type="button" data-filter="loss" aria-pressed="false">Losses</button>
+        <button class="filter-btn" type="button" data-filter="draw" aria-pressed="false">Draws</button>
+      </div>
+    </div>
+    <label class="filter-group" for="opening-filter">
+      <span class="filter-label">Opening</span>
+      <select class="opening-select" id="opening-filter">
+        <option value="all">All openings</option>
+      </select>
+    </label>
   </div>
 
   <section class="game-section" id="rapid">
     <h2>Rated rapid games</h2>
 
-    <article class="card game-card" data-result="win">
+    <article class="card game-card" data-result="win" data-opening="Italian Game: Classical Variation, Greco Gambit, Traditional Line">
       <h3>Chess.com: Marcyn8er vs ChrisCannoli</h3>
       <div class="meta"><span>Aug 24, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>15+10 rapid</span><span>17 moves</span></div>
       <div class="facts"><div><span class="label">Opponent:</span> Marcyn8er</div><div><span class="label">Ratings:</span> 1204 vs 1168</div><div><span class="label">Opening:</span> Italian Game: Classical Variation, Greco Gambit, Traditional Line</div><div><span class="label">Time trouble:</span> Not applicable</div><div><span class="label">Main problem phase:</span> None reported</div><div><span class="label">Turning point:</span> Opponent hung the queen</div></div>
@@ -79,7 +94,7 @@
       <a class="game-link" href="https://www.chess.com/game/live/173471446534">Open original game</a>
     </article>
 
-    <article class="card game-card" data-result="win">
+    <article class="card game-card" data-result="win" data-opening="Scotch Game: Scotch Gambit">
       <h3>Lichess: djalalmokh vs ChrisCannoli</h3>
       <div class="meta"><span>Aug 22, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>10+5 rapid</span><span>32 moves</span></div>
       <div class="facts"><div><span class="label">Opponent:</span> djalalmokh</div><div><span class="label">Opening:</span> Scotch Game: Scotch Gambit</div><div><span class="label">Ratings:</span> Not available</div><div><span class="label">Time trouble:</span> Mild</div><div><span class="label">Time trouble began:</span> Below 5:00 on move 21</div><div><span class="label">Lowest known time:</span> About 2:00 at finish</div></div>
@@ -92,7 +107,7 @@
       <a class="game-link" href="https://lichess.org/Vp2DZ68Q/black">Open original game</a>
     </article>
 
-    <article class="card game-card" data-result="draw">
+    <article class="card game-card" data-result="draw" data-opening="King's Pawn: Whale Variation">
       <h3>Chess.com: chillo123456 vs ChrisCannoli</h3>
       <div class="meta"><span>Aug 21, 2026</span><span class="result result-draw">DRAW</span><span>Insufficient material</span><span>Black</span><span>15+10 rapid</span></div>
       <div class="facts"><div><span class="label">Opponent:</span> chillo123456</div><div><span class="label">Ratings:</span> 1204 vs 1202</div><div><span class="label">Opening:</span> King's Pawn: Whale Variation</div><div><span class="label">Main problem phase:</span> Endgame</div><div><span class="label">Time trouble:</span> Reported; exact classification not recorded</div><div><span class="label">Turning point:</span> Dropped a pawn in the endgame</div></div>
@@ -104,7 +119,7 @@
       <a class="game-link" href="https://www.chess.com/analysis/game/live/173342297694/review">Open original game</a>
     </article>
 
-    <article class="card game-card" data-result="win">
+    <article class="card game-card" data-result="win" data-opening="Italian Game">
       <h3>Lichess: rodrigodevan vs ChrisCannoli</h3>
       <div class="meta"><span>Aug 21, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>10+5 rapid</span></div>
       <div class="facts"><div><span class="label">Opponent:</span> rodrigodevan</div><div><span class="label">Opening:</span> Italian Game</div><div><span class="label">Ratings:</span> Not available</div><div><span class="label">Time trouble:</span> About 1:00 remaining at end</div><div><span class="label">Main problem phase:</span> None reported</div><div><span class="label">Turning point:</span> Queen and rook reached the second rank</div></div>
@@ -118,7 +133,7 @@
 
   <section class="game-section" id="coach">
     <h2>Coach games</h2>
-    <article class="card game-card" data-result="loss">
+    <article class="card game-card" data-result="loss" data-opening="French Defense: Rubinstein Variation">
       <h3>Chess.com: ChrisCannoli vs Joshukid</h3>
       <div class="meta"><span>Aug 27, 2026</span><span class="result result-loss">LOSS</span><span>Resignation</span><span>White</span><span>5 days/move</span><span>34 moves</span></div>
       <div class="facts"><div><span class="label">Opponent:</span> Joshukid</div><div><span class="label">Game type:</span> Coach game</div><div><span class="label">Daily ratings:</span> 1221 vs 1598</div><div><span class="label">Coach blitz rating:</span> 2787</div><div><span class="label">Opening:</span> French Defense: Rubinstein Variation</div><div><span class="label">Opening familiarity:</span> Unfamiliar</div><div><span class="label">Typical prep:</span> Open or Closed Tarrasch Variation</div><div><span class="label">Time trouble:</span> Not applicable</div><div><span class="label">Main problem phase:</span> Opening / transition from opening</div><div><span class="label">Turning point:</span> Pawn pushes around the pinned bishop</div></div>
@@ -134,24 +149,51 @@
   <footer>Source training records are maintained in the chess-training GitHub repository.</footer>
 </main>
 <script>
-  const buttons = document.querySelectorAll('.filter-btn');
+  const resultButtons = document.querySelectorAll('.filter-btn');
+  const openingFilter = document.getElementById('opening-filter');
   const cards = document.querySelectorAll('.game-card');
   const sections = document.querySelectorAll('.game-section');
+  let activeResult = 'all';
+  let activeOpening = 'all';
 
-  function applyFilter(filter) {
+  const openings = [...new Set([...cards].map(card => card.dataset.opening).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b));
+
+  openings.forEach(opening => {
+    const option = document.createElement('option');
+    option.value = opening;
+    option.textContent = opening;
+    openingFilter.appendChild(option);
+  });
+
+  function applyFilters() {
     cards.forEach(card => {
-      card.hidden = filter !== 'all' && card.dataset.result !== filter;
+      const resultMatches = activeResult === 'all' || card.dataset.result === activeResult;
+      const openingMatches = activeOpening === 'all' || card.dataset.opening === activeOpening;
+      card.hidden = !(resultMatches && openingMatches);
     });
+
     sections.forEach(section => {
       const visibleCards = [...section.querySelectorAll('.game-card')].some(card => !card.hidden);
       section.hidden = !visibleCards;
     });
-    buttons.forEach(button => {
-      button.setAttribute('aria-pressed', button.dataset.filter === filter ? 'true' : 'false');
+
+    resultButtons.forEach(button => {
+      button.setAttribute('aria-pressed', button.dataset.filter === activeResult ? 'true' : 'false');
     });
   }
 
-  buttons.forEach(button => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
+  resultButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      activeResult = button.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  openingFilter.addEventListener('change', () => {
+    activeOpening = openingFilter.value;
+    applyFilters();
+  });
 </script>
 </body>
 </html>
