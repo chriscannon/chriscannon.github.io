@@ -50,16 +50,16 @@
   <p class="muted">Training log for <strong>ChrisCannoli</strong> on Chess.com and Lichess. The goal is to identify recurring weaknesses and strengths from serious games and use them to guide study.</p>
 
   <h2 id="plan">Current study plan</h2>
-  <table>
-    <tr><th>Day</th><th>Training</th></tr>
-    <tr><td>Monday</td><td>Play 15+10 rapid</td></tr>
-    <tr><td>Tuesday</td><td>Coach puzzles</td></tr>
-    <tr><td>Wednesday</td><td>Lesson with coach, primarily reviewing Tuesday's puzzles</td></tr>
-    <tr><td>Thursday</td><td>Day off</td></tr>
-    <tr><td>Friday</td><td>Play 15+10 rapid</td></tr>
-    <tr><td>Saturday</td><td>ChessMood — Tactic Ninja</td></tr>
-    <tr><td>Sunday</td><td>ChessMood — Endgame Roadmap review; later double down on Tactic Ninja</td></tr>
-  </table>
+<table>
+  <tr><th>Day</th><th>Training</th><th>Time</th></tr>
+  <tr><td>Monday</td><td>Play 15+10 rapid</td><td>30–45 min</td></tr>
+  <tr><td>Tuesday</td><td>Coach puzzles</td><td>30–45 min</td></tr>
+  <tr><td>Wednesday</td><td>Lesson with coach — primarily review Tuesday&#x27;s puzzles</td><td>~45 min</td></tr>
+  <tr><td>Thursday</td><td>Day off</td><td>—</td></tr>
+  <tr><td>Friday</td><td>Play 15+10 rapid</td><td>30–45 min</td></tr>
+  <tr><td>Saturday</td><td>ChessMood — Tactic Ninja</td><td>30–45 min</td></tr>
+  <tr><td>Sunday</td><td>ChessMood — Endgame Roadmap review</td><td>30–45 min</td></tr>
+</table>
 
   <h2>Game filters</h2>
   <div class="filter-panel">
@@ -87,85 +87,126 @@
       </select>
     </label>
   </div>
+
   <section class="game-section" id="rapid">
     <h2>Rated rapid games</h2>
+<article class="card game-card" data-result="win" data-color="white" data-opening="&lt;opening name&gt;">
+  <h3>&lt;display title&gt;</h3>
+  <div class="meta"><span>YYYY-MM-DD</span><span class="result result-win">WIN</span><span>White</span><span>15+10 rapid</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> &lt;username or Not available&gt;</div><div><span class="label">Ratings:</span> &lt;rating or Not available&gt; vs &lt;rating or Not available&gt;</div><div><span class="label">Opening:</span> &lt;opening name&gt;</div><div><span class="label">Opening familiarity:</span> Prepared | Familiar | Unfamiliar | Not reported</div><div><span class="label">Time trouble:</span> None | Mild | Moderate | Severe | Not applicable | Not reported</div><div><span class="label">Time trouble began:</span> &lt;move number, phase, Not applicable, or Not reported&gt;</div><div><span class="label">Lowest known time:</span> &lt;clock time, Not applicable, or Not reported&gt;</div><div><span class="label">Main problem phase:</span> Opening | Middlegame | Endgame | None reported</div><div><span class="label">Turning point:</span> &lt;turning point&gt;</div></div>
+  <h4>Mistakes</h4>
+  <ul><li>&lt;mistake&gt;</li></ul>
+  <h4>What went well</h4>
+  <ul><li>&lt;strength&gt;</li></ul>
+  <h4>Primary reason for result</h4>
+  <p>&lt;reason&gt;</p>
+  <h4>Main takeaway</h4>
+  <p>&lt;one concrete lesson&gt;</p>
+  <div class="tags"><span class="tag">&lt;theme&gt;</span></div>
+  <a class="game-link" href="&lt;game URL&gt;">View the game on Chess.com</a>
+</article>
 
-    <article class="card game-card" data-result="loss" data-color="white" data-opening="Philidor Opening">
-      <h3>Chess.com: ChrisCannoli vs Atakan3540</h3>
-      <div class="meta"><span>Aug 28, 2026</span><span class="result result-loss">LOSS</span><span>Resignation</span><span>White</span><span>15+10 rapid</span></div>
-      <div class="facts"><div><span class="label">Opponent:</span> Atakan3540</div><div><span class="label">Ratings:</span> 1212 vs 1303</div><div><span class="label">Accuracy:</span> 74% (1 blunder)</div><div><span class="label">Opening:</span> Philidor Opening: Exchange</div><div><span class="label">Opening familiarity:</span> Unfamiliar early ...c5 variation</div><div><span class="label">Opening evaluation:</span> About +2</div><div><span class="label">Time trouble:</span> Severe</div><div><span class="label">Time trouble began:</span> Below 5:00 on move 21; below 1:00 by move 32</div><div><span class="label">Lowest known time:</span> 0:12 at resignation</div><div><span class="label">Main problem phase:</span> Middlegame</div><div><span class="label">Turning point:</span> Rook-for-bishop-and-pawn sacrifice followed by a queen trade</div></div>
-      <h4>Mistakes</h4><ul><li>Did not use the development lead to start a queenside pawn storm against the castled king.</li><li>Did not maintain enough control over the center.</li><li>Sacrificed a rook for a bishop and pawn and also traded queens, removing much of the intended attacking compensation and dropping the evaluation to about -3.</li><li>Used too much time while the opponent played very quickly and barely used any time.</li></ul>
-      <h4>What went well</h4><ul><li>Handled an unfamiliar Philidor Exchange setup with an early ...c5 well and came out of the opening ahead in development.</li><li>Reached roughly a +2 engine advantage out of the opening.</li><li>Found a concrete tactical idea around the bishop and pawn, even though the full exchange sacrifice was unfavorable.</li><li>Continued trying to defend the inferior endgame under severe time pressure.</li></ul>
-      <h4>Primary reason for result</h4><p>The exchange sacrifice plus queen trade converted a favorable position into a materially inferior rook-and-knight-versus-two-rooks endgame without enough compensation. Severe time pressure and the opponent's passed pawns then made the defense much harder.</p>
-      <h4>Main takeaway</h4><p>Use a development lead aggressively against a queenside-castled king while maintaining central control. Before sacrificing an exchange, calculate through forced simplifications such as queen trades to make sure the compensation survives into the resulting endgame. Also manage the clock more aggressively when the opponent is playing quickly.</p>
-      <div class="tags"><span class="tag">Unfamiliar openings</span><span class="tag">Central control</span><span class="tag">Opposite-side castling attacks</span><span class="tag">Exchange sacrifices</span><span class="tag">Material vs compensation</span><span class="tag">Time management</span><span class="tag">Passed pawns</span></div>
-      <a class="game-link" href="https://www.chess.com/analysis/game/live/173656989712">View the game on Chess.com</a>
-    </article>
+<article class="card game-card" data-result="loss" data-color="white" data-opening="Philidor Opening">
+  <h3>Chess.com: ChrisCannoli vs Atakan3540</h3>
+  <div class="meta"><span>Aug 28, 2026</span><span class="result result-loss">LOSS</span><span>Resignation</span><span>White</span><span>15+10 rapid</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> Atakan3540</div><div><span class="label">Ratings:</span> 1212 vs 1303</div><div><span class="label">Accuracy:</span> 74% (1 blunder)</div><div><span class="label">Opening:</span> Philidor Opening: Exchange</div><div><span class="label">Opening familiarity:</span> Unfamiliar early ...c5 variation that kicked the knight</div><div><span class="label">Opening evaluation:</span> About +2</div><div><span class="label">Time trouble:</span> Severe</div><div><span class="label">Time trouble began:</span> Below 5:00 on move 21; below 1:00 by move 32</div><div><span class="label">Lowest known time:</span> 0:12 at resignation</div><div><span class="label">Main problem phase:</span> Middlegame, after a missed strategic opportunity in the opening</div><div><span class="label">Turning point:</span> Sacrificed a rook for a bishop and pawn and also traded queens, after which the evaluation dropped to about -3.</div></div>
+  <h4>Mistakes</h4>
+  <ul><li>Lost the opening advantage by not starting a queenside pawn storm against the king that had castled queenside.</li><li>Did not maintain enough control over the center.</li><li>In the middlegame, sacrificed a rook for a bishop and pawn because the bishop was powerful on a long diagonal and there was a tactic to win the bishop and a pawn, but also traded queens. The queen trade removed much of the potential attacking compensation and the engine evaluation fell to about -3.</li><li>Used too much time while the opponent played very quickly and barely used any time.</li><li>Entered a rook-and-knight-versus-two-rooks endgame where the opponent retained the advantage, created too many passed pawns, and used a rook to collect White&#x27;s pawns.</li></ul>
+  <h4>What went well</h4>
+  <ul><li>Handled an unfamiliar Philidor Exchange setup with an early ...c5 well enough to come out of the opening ahead in development.</li><li>Reached roughly a +2 engine advantage out of the opening despite not knowing the variation.</li><li>Identified a concrete tactical idea around the opponent&#x27;s bishop and pawn, even though the full exchange sacrifice and queen trade were ultimately unfavorable.</li><li>Tried to defend the inferior endgame despite severe time pressure.</li></ul>
+  <h4>Primary reason for result</h4>
+  <p>The exchange sacrifice combined with the queen trade converted a favorable position into a materially inferior endgame without enough compensation; severe time pressure and the opponent&#x27;s passed pawns then made the defense much harder.</p>
+  <h4>Main takeaway</h4>
+  <p>When the opponent castles queenside, consider using the development lead to start a queenside pawn storm while keeping firm central control. Before sacrificing an exchange, calculate the position after all forced simplifications—especially queen trades—to make sure the compensation survives into the resulting endgame. Also manage the clock more aggressively when the opponent is playing quickly so a strategically difficult endgame does not become a severe time-pressure problem as well.</p>
+  <div class="tags"><span class="tag">Handling unfamiliar openings</span><span class="tag">Central control</span><span class="tag">Opposite-side castling attacks</span><span class="tag">Exchange sacrifices</span><span class="tag">Material vs compensation</span><span class="tag">Time management</span><span class="tag">Passed pawns</span><span class="tag">Endgame defense</span></div>
+  <a class="game-link" href="https://www.chess.com/analysis/game/live/173656989712">View the game on Chess.com</a>
+</article>
 
-    <article class="card game-card" data-result="win" data-color="black" data-opening="Italian Game">
-      <h3>Chess.com: Marcyn8er vs ChrisCannoli</h3>
-      <div class="meta"><span>Aug 24, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>15+10 rapid</span><span>17 moves</span></div>
-      <div class="facts"><div><span class="label">Opponent:</span> Marcyn8er</div><div><span class="label">Ratings:</span> 1204 vs 1168</div><div><span class="label">Opening:</span> Italian Game: Classical Variation, Greco Gambit, Traditional Line</div><div><span class="label">Time trouble:</span> Not applicable</div><div><span class="label">Main problem phase:</span> None reported</div><div><span class="label">Turning point:</span> Opponent hung the queen</div></div>
-      <h4>What went well</h4><ul><li>The game fell directly into a prepared opening line.</li><li>Immediately capitalized when the opponent hung the queen.</li></ul>
-      <h4>Primary reason for result</h4><p>The opponent hung the queen in a short 17-move game.</p>
-      <h4>Main takeaway</h4><p>Opening preparation worked well; stay alert for major tactical mistakes and convert them immediately.</p>
-      <div class="tags"><span class="tag">Opening preparation</span><span class="tag">Tactical awareness</span><span class="tag">Capitalizing on blunders</span></div>
-      <a class="game-link" href="https://www.chess.com/game/live/173471446534">View the game on Chess.com</a>
-    </article>
+<article class="card game-card" data-result="win" data-color="black" data-opening="Italian Game">
+  <h3>Chess.com: Marcyn8er vs ChrisCannoli</h3>
+  <div class="meta"><span>Aug 24, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>15+10 rapid</span><span>17 moves</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> Marcyn8er</div><div><span class="label">Ratings:</span> 1204 vs 1168</div><div><span class="label">Opening:</span> Italian Game: Classical Variation, Greco Gambit, Traditional Line</div><div><span class="label">Time trouble:</span> Not applicable</div><div><span class="label">Time trouble began:</span> Not applicable</div><div><span class="label">Lowest known time:</span> Not applicable</div><div><span class="label">Turning point:</span> Opponent hung their queen.</div></div>
+  <h4>Mistakes</h4>
+  <ul><li>None reported yet.</li></ul>
+  <h4>What went well</h4>
+  <ul><li>Won the game as Black.</li><li>The opening fell directly into a prepared opening line.</li><li>Capitalized when the opponent hung their queen.</li></ul>
+  <h4>Primary reason for result</h4>
+  <p>Opponent hung their queen in a short 17-move game.</p>
+  <h4>Main takeaway</h4>
+  <p>Opening preparation worked well; stay alert for major tactical mistakes and immediately capitalize when the opponent leaves high-value material en prise.</p>
+  <div class="tags"><span class="tag">Opening preparation</span><span class="tag">Tactical awareness</span><span class="tag">Capitalizing on opponent blunders</span><span class="tag">Opening handling</span></div>
+  <a class="game-link" href="https://www.chess.com/game/live/173471446534">View the game on Chess.com</a>
+</article>
 
-    <article class="card game-card" data-result="win" data-color="black" data-opening="Scotch Game">
-      <h3>Lichess: djalalmokh vs ChrisCannoli</h3>
-      <div class="meta"><span>Aug 22, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>10+5 rapid</span><span>32 moves</span></div>
-      <div class="facts"><div><span class="label">Opponent:</span> djalalmokh</div><div><span class="label">Opening:</span> Scotch Game: Scotch Gambit</div><div><span class="label">Ratings:</span> Not available</div><div><span class="label">Time trouble:</span> Mild</div><div><span class="label">Time trouble began:</span> Below 5:00 on move 21</div><div><span class="label">Lowest known time:</span> About 2:00 at finish</div></div>
-      <h4>Mistakes</h4><ul><li>Missed an opportunity to use the knight to fork both of the opponent's rooks.</li><li>Entered mild time trouble for roughly the final third of the game.</li></ul>
-      <h4>What went well</h4><ul><li>Found a decisive double attack on a knight that could not move because moving it would allow checkmate.</li><li>Successfully handled the Scotch Gambit as Black.</li></ul>
-      <h4>Biggest turning points</h4><ul><li>Opponent gave up a bishop and knight for a rook in the opening.</li><li>Opponent later dropped a pawn.</li></ul>
-      <h4>Primary reason for result</h4><p>Found the double attack on a knight that was effectively pinned by a mating threat.</p>
-      <h4>Main takeaway</h4><p>Keep looking for tactics created by mating threats and constrained defenders, while improving time management and awareness of knight forks against high-value pieces.</p>
-      <div class="tags"><span class="tag">Time management</span><span class="tag">Knight forks</span><span class="tag">Double attacks</span><span class="tag">Mating threats</span></div>
-      <a class="game-link" href="https://lichess.org/Vp2DZ68Q/black">View the game on Lichess</a>
-    </article>
+<article class="card game-card" data-result="win" data-color="black" data-opening="Scotch Game">
+  <h3>Lichess: djalalmokh vs ChrisCannoli</h3>
+  <div class="meta"><span>Aug 22, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>10+5 rapid</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> djalalmokh</div><div><span class="label">Opening:</span> Scotch Game: Scotch Gambit</div><div><span class="label">Time trouble:</span> Mild</div><div><span class="label">Time trouble began:</span> Below 5:00 on move 21</div><div><span class="label">Lowest known time:</span> About 2:00 at finish</div><div><span class="label">Turning point:</span> Opponent gave up a bishop and knight for a rook in the opening; opponent later dropped a pawn.</div></div>
+  <h4>Mistakes</h4>
+  <ul><li>Missed an opportunity to use my knight to fork both of my opponent&#x27;s rooks.</li><li>Got into time trouble.</li></ul>
+  <h4>What went well</h4>
+  <ul><li>Won the game as Black.</li><li>Successfully handled the Scotch Game: Scotch Gambit.</li><li>Found a double attack on a knight that could not move because moving it would allow checkmate against the king.</li><li>Was particularly happy to find the decisive tactical idea.</li></ul>
+  <h4>Primary reason for result</h4>
+  <p>Found a double attack on a knight that was effectively pinned by a mating threat; moving the knight would allow checkmate.</p>
+  <h4>Main takeaway</h4>
+  <p>Continue looking for tactical opportunities created by mating threats and constrained defenders, while improving time management and spotting knight forks against high-value pieces.</p>
+  <div class="tags"><span class="tag">Time management</span><span class="tag">Knight-fork awareness</span><span class="tag">Tactical pattern recognition</span><span class="tag">Double attacks</span><span class="tag">Exploiting mating threats</span><span class="tag">Opening handling</span></div>
+  <a class="game-link" href="https://lichess.org/Vp2DZ68Q/black">View the game on Lichess</a>
+</article>
 
-    <article class="card game-card" data-result="draw" data-color="black" data-opening="King's Pawn">
-      <h3>Chess.com: chillo123456 vs ChrisCannoli</h3>
-      <div class="meta"><span>Aug 21, 2026</span><span class="result result-draw">DRAW</span><span>Insufficient material</span><span>Black</span><span>15+10 rapid</span></div>
-      <div class="facts"><div><span class="label">Opponent:</span> chillo123456</div><div><span class="label">Ratings:</span> 1204 vs 1202</div><div><span class="label">Opening:</span> King's Pawn: Whale Variation</div><div><span class="label">Main problem phase:</span> Endgame</div><div><span class="label">Time trouble:</span> Reported; exact classification not recorded</div><div><span class="label">Turning point:</span> Dropped a pawn in the endgame</div></div>
-      <h4>Mistakes</h4><ul><li>Played too slowly.</li><li>Gave up a large advantage in a rook + bishop vs rook + knight endgame.</li><li>Dropped a pawn in the endgame.</li></ul>
-      <h4>What went well</h4><ul><li>Handled an unfamiliar opening well.</li><li>Used tactics to reach a two-pawn advantage.</li><li>Played decent moves under time pressure.</li></ul>
-      <h4>Primary reason the advantage was lost</h4><p>Endgame conversion and time management.</p>
-      <h4>Main takeaway</h4><p>Improve time management and conversion of material advantages in endgames.</p>
-      <div class="tags"><span class="tag">Time management</span><span class="tag">Advantage conversion</span><span class="tag">Endgame technique</span></div>
-      <a class="game-link" href="https://www.chess.com/analysis/game/live/173342297694/review">View the game on Chess.com</a>
-    </article>
+<article class="card game-card" data-result="win" data-color="black" data-opening="Italian Game">
+  <h3>Lichess: rodrigodevan vs ChrisCannoli</h3>
+  <div class="meta"><span>Aug 21, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>10+5 rapid</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> rodrigodevan</div><div><span class="label">Opening:</span> Italian Game</div><div><span class="label">Time trouble:</span> Yes — about 1 minute remaining at the end</div><div><span class="label">Turning point:</span> Opponent allowed the queen and rook onto the second rank</div></div>
+  <h4>Mistakes</h4>
+  <ul><li>None reported for this game.</li></ul>
+  <h4>What went well</h4>
+  <ul><li>Played the opening very accurately.</li><li>Played the middlegame very accurately.</li><li>Played the endgame very accurately.</li><li>Maintained steady pressure against a weakened king with two pawns pushed in front of it.</li><li>Took advantage of the opportunity to get the queen and rook onto the second rank.</li></ul>
+  <h4>Primary reason for result</h4>
+  <p>Steady pressure on a weak king that had two pawns pushed in front of it</p>
+  <h4>Main takeaway</h4>
+  <p>Maintain pressure against weakened king positions and exploit opportunities for heavy-piece infiltration</p>
+  <div class="tags"><span class="tag">Accurate opening play</span><span class="tag">Accurate middlegame play</span><span class="tag">Accurate endgame play</span><span class="tag">Playing accurately under time pressure</span><span class="tag">Exploiting weakened king positions</span><span class="tag">Heavy-piece infiltration on the second rank</span></div>
+  <a class="game-link" href="https://lichess.org/vi1Vv7Ox">View the game on Lichess</a>
+</article>
 
-    <article class="card game-card" data-result="win" data-color="black" data-opening="Italian Game">
-      <h3>Lichess: rodrigodevan vs ChrisCannoli</h3>
-      <div class="meta"><span>Aug 21, 2026</span><span class="result result-win">WIN</span><span>Black</span><span>10+5 rapid</span></div>
-      <div class="facts"><div><span class="label">Opponent:</span> rodrigodevan</div><div><span class="label">Opening:</span> Italian Game</div><div><span class="label">Ratings:</span> Not available</div><div><span class="label">Time trouble:</span> About 1:00 remaining at end</div><div><span class="label">Main problem phase:</span> None reported</div><div><span class="label">Turning point:</span> Queen and rook reached the second rank</div></div>
-      <h4>What went well</h4><ul><li>Played the opening, middlegame, and endgame very accurately.</li><li>Maintained steady pressure against a weakened king with two pawns pushed in front of it.</li><li>Exploited the chance to infiltrate with queen and rook on the second rank.</li></ul>
-      <h4>Primary reason for result</h4><p>Steady pressure on the weakened king.</p>
-      <h4>Main takeaway</h4><p>Maintain pressure against weakened king positions and exploit opportunities for heavy-piece infiltration.</p>
-      <div class="tags"><span class="tag">Accurate play</span><span class="tag">King attacks</span><span class="tag">Heavy-piece infiltration</span><span class="tag">Time pressure</span></div>
-      <a class="game-link" href="https://lichess.org/vi1Vv7Ox">View the game on Lichess</a>
-    </article>
+<article class="card game-card" data-result="draw" data-color="black" data-opening="King&#x27;s Pawn">
+  <h3>Chess.com: chillo123456 vs ChrisCannoli</h3>
+  <div class="meta"><span>Aug 21, 2026</span><span class="result result-draw">DRAW</span><span>Insufficient material</span><span>Black</span><span>15+10 rapid</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> chillo123456</div><div><span class="label">Ratings:</span> 1204 vs 1202</div><div><span class="label">Opening:</span> King&#x27;s Pawn: Whale Variation</div><div><span class="label">Time trouble:</span> Reported; exact classification not recorded</div><div><span class="label">Main problem phase:</span> Endgame</div><div><span class="label">Turning point:</span> Dropped a pawn in the endgame</div></div>
+  <h4>Mistakes</h4>
+  <ul><li>Played too slowly.</li><li>Gave up a big advantage in a rook + bishop vs. rook + knight endgame.</li><li>Dropped a pawn in the endgame.</li></ul>
+  <h4>What went well</h4>
+  <ul><li>Played an unfamiliar opening well.</li><li>Used tactics to reach a two-pawn advantage.</li><li>Played decent moves under time pressure.</li></ul>
+  <h4>Primary reason for result</h4>
+  <p>Endgame conversion and time management</p>
+  <h4>Main takeaway</h4>
+  <p>Improve time management and conversion of material advantages in endgames</p>
+  <div class="tags"><span class="tag">Time management</span><span class="tag">Converting advantages</span><span class="tag">Endgame technique</span></div>
+  <a class="game-link" href="https://www.chess.com/analysis/game/live/173342297694/review">View the game on Chess.com</a>
+</article>
   </section>
 
   <section class="game-section" id="coach">
     <h2>Coach games</h2>
-    <article class="card game-card" data-result="loss" data-color="white" data-opening="French Defense">
-      <h3>Chess.com: ChrisCannoli vs Joshukid</h3>
-      <div class="meta"><span>Aug 27, 2026</span><span class="result result-loss">LOSS</span><span>Resignation</span><span>White</span><span>5 days/move</span><span>34 moves</span></div>
-      <div class="facts"><div><span class="label">Opponent:</span> Joshukid</div><div><span class="label">Game type:</span> Coach game</div><div><span class="label">Daily ratings:</span> 1221 vs 1598</div><div><span class="label">Coach blitz rating:</span> 2787</div><div><span class="label">Opening:</span> French Defense: Rubinstein Variation</div><div><span class="label">Opening familiarity:</span> Unfamiliar</div><div><span class="label">Typical prep:</span> Open or Closed Tarrasch Variation</div><div><span class="label">Time trouble:</span> Not applicable</div><div><span class="label">Main problem phase:</span> Opening / transition from opening</div><div><span class="label">Turning point:</span> Pawn pushes around the pinned bishop</div></div>
-      <h4>Mistakes</h4><ul><li>Did not choose the fianchetto/opposite-side-castling setup that would have better challenged Black's likely setup.</li><li>Declined a free a-pawn because of concern about rook activity on the a-file, even though Black had no adequate compensation and White had not castled.</li><li>Pushed pawns around a pinned bishop, losing a pawn and allowing an outside passed pawn.</li></ul>
-      <h4>What went well</h4><ul><li>Recognized after the game that the free a-pawn could have been captured safely.</li><li>Identified a more appropriate strategic setup for handling the unfamiliar Rubinstein structure.</li></ul>
-      <h4>Primary reason for result</h4><p>Strategic mistakes in an unfamiliar opening led to material loss and an outside passed pawn.</p>
-      <h4>Main takeaway</h4><p>In unfamiliar positions, evaluate concrete compensation rather than avoiding material gains because of vague activity, and be especially careful with pawn moves around pinned pieces.</p>
-      <div class="tags"><span class="tag">Unfamiliar openings</span><span class="tag">Strategic planning</span><span class="tag">Material vs compensation</span><span class="tag">Pinned pieces</span><span class="tag">Passed pawns</span></div>
-      <a class="game-link" href="https://www.chess.com/game/daily/1014868858">View the game on Chess.com</a>
-    </article>
+<article class="card game-card" data-result="loss" data-color="white" data-opening="French Defense">
+  <h3>Chess.com: ChrisCannoli vs Joshukid</h3>
+  <div class="meta"><span>Aug 27, 2026</span><span class="result result-loss">LOSS</span><span>Resignation</span><span>White</span><span>5 days per move (Daily)</span><span>34 moves</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> Joshukid</div><div><span class="label">Game type:</span> Coach game</div><div><span class="label">Ratings:</span> 1221 vs 1598</div><div><span class="label">Opponent blitz rating:</span> 2787</div><div><span class="label">Opening:</span> French Defense: Rubinstein Variation</div><div><span class="label">Opening familiarity:</span> Unfamiliar</div><div><span class="label">Typical preparation:</span> More familiar with Open or Closed Tarrasch Variation positions</div><div><span class="label">Time trouble:</span> Not applicable</div><div><span class="label">Time trouble began:</span> Not applicable</div><div><span class="label">Lowest known time:</span> Not applicable</div><div><span class="label">Main problem phase:</span> Opening / transition from opening</div><div><span class="label">Turning point:</span> Pushing pawns around the pinned bishop, which led to losing a pawn and allowed an outside passed pawn.</div></div>
+  <h4>Mistakes</h4>
+  <ul><li>In the unfamiliar Rubinstein Variation, did not fianchetto the bishop and castle on the opposite side from the opponent as a way to fight against the opponent&#x27;s likely fianchetto and opposite-side castling setup.</li><li>Did not capture a free a-pawn because of concern that opening the a-file would activate the opponent&#x27;s rook. This concern was unnecessary because White had not yet castled and Black did not have compensation for the pawn.</li><li>Pushed pawns around a pinned bishop, which led to the loss of a pawn and allowed the opponent to create an outside passed pawn.</li></ul>
+  <h4>What went well</h4>
+  <ul><li>Recognized after the game that the free a-pawn could have been captured safely.</li><li>Identified a more appropriate strategic setup for handling the unfamiliar Rubinstein structure.</li></ul>
+  <h4>Primary reason for result</h4>
+  <p>Strategic mistakes in an unfamiliar opening led to material loss and an outside passed pawn.</p>
+  <h4>Main takeaway</h4>
+  <p>In unfamiliar openings, evaluate the concrete position rather than relying on fear of potential activity; take free material when the opponent has no sufficient compensation, and be careful about pawn moves around pinned pieces that can create lasting structural weaknesses.</p>
+  <div class="tags"><span class="tag">Handling unfamiliar openings</span><span class="tag">Strategic planning</span><span class="tag">Evaluating compensation for material</span><span class="tag">Taking free material</span><span class="tag">Pawn moves around pinned pieces</span><span class="tag">Passed-pawn prevention</span></div>
+  <a class="game-link" href="https://www.chess.com/game/daily/1014868858">View the game on Chess.com</a>
+</article>
   </section>
 
-  <footer>Source training records are maintained in the chess-training GitHub repository.</footer>
+  <footer>Generated automatically from the chess-training source records.</footer>
 </main>
 <script>
   const resultButtons = document.querySelectorAll('.filter-btn[data-filter]');
@@ -226,6 +267,8 @@
     activeOpening = openingFilter.value;
     applyFilters();
   });
+
+  applyFilters();
 </script>
 </body>
 </html>
