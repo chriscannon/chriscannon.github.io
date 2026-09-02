@@ -60,7 +60,7 @@
       <h1>Chess Training</h1>
       <p class="muted">Training log for <strong>ChrisCannoli</strong> on Chess.com and Lichess. The goal is to identify recurring weaknesses and strengths from serious games and use them to guide study.</p>
     </div>
-    <div class="last-updated">Last updated: Sep 1, 2026 at 7:06 PM EDT</div>
+    <div class="last-updated">Last updated: Sep 2, 2026 at 6:49 PM EDT</div>
   </div>
 
   <h2 id="plan">Current study plan</h2>
@@ -310,13 +310,18 @@
   let activeColor = 'all';
   let activeOpening = 'all';
 
-  const openings = [...new Set([...cards].map(card => card.dataset.opening).filter(Boolean))]
-    .sort((a, b) => a.localeCompare(b));
+  const openingCounts = [...cards].reduce((counts, card) => {
+    const opening = card.dataset.opening;
+    if (opening) counts[opening] = (counts[opening] || 0) + 1;
+    return counts;
+  }, {});
+  const openings = Object.keys(openingCounts).sort((a, b) => a.localeCompare(b));
 
+  openingFilter.querySelector('option[value="all"]').textContent = `All openings (${cards.length})`;
   openings.forEach(opening => {
     const option = document.createElement('option');
     option.value = opening;
-    option.textContent = opening;
+    option.textContent = `${opening} (${openingCounts[opening]})`;
     openingFilter.appendChild(option);
   });
 
