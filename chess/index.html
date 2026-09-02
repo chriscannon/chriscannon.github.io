@@ -60,7 +60,7 @@
       <h1>Chess Training</h1>
       <p class="muted">Training log for <strong>ChrisCannoli</strong> on Chess.com and Lichess. The goal is to identify recurring weaknesses and strengths from serious games and use them to guide study.</p>
     </div>
-    <div class="last-updated">Last updated: Sep 2, 2026 at 6:54 PM EDT</div>
+    <div class="last-updated">Last updated: Sep 2, 2026 at 6:56 PM EDT</div>
   </div>
 
   <h2 id="plan">Current study plan</h2>
@@ -312,8 +312,7 @@
 
   sections.forEach(section => {
     const heading = section.querySelector('h2');
-    const gameCount = section.querySelectorAll('.game-card').length;
-    if (heading) heading.textContent = `${heading.textContent} (${gameCount})`;
+    if (heading) heading.dataset.baseTitle = heading.textContent;
   });
 
   const openingCounts = [...cards].reduce((counts, card) => {
@@ -339,8 +338,11 @@
     });
 
     sections.forEach(section => {
-      const visibleCards = [...section.querySelectorAll('.game-card')].some(card => !card.hidden);
-      section.hidden = !visibleCards;
+      const sectionCards = [...section.querySelectorAll('.game-card')];
+      const visibleCount = sectionCards.filter(card => !card.hidden).length;
+      const heading = section.querySelector('h2');
+      if (heading) heading.textContent = `${heading.dataset.baseTitle} (${visibleCount})`;
+      section.hidden = visibleCount === 0;
     });
 
     resultButtons.forEach(button => {
