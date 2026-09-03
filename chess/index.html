@@ -60,7 +60,7 @@
       <h1>Chess Training</h1>
       <p class="muted">Training log for <strong>ChrisCannoli</strong> on Chess.com and Lichess. The goal is to identify recurring weaknesses and strengths from serious games and use them to guide study.</p>
     </div>
-    <div class="last-updated">Last updated: Sep 2, 2026 at 10:17 PM EDT</div>
+    <div class="last-updated">Last updated: Sep 2, 2026 at 10:21 PM EDT</div>
   </div>
 
   <h2 id="plan">Current study plan</h2>
@@ -282,17 +282,19 @@
 
   <section class="game-section" id="coach">
     <h2>Coach games</h2>
-<article class="card game-card" data-result="draw" data-color="white" data-opening="Caro-Kann">
+<article class="card game-card" data-result="loss" data-color="white" data-opening="Caro-Kann">
   <h3>Chess.com: ChrisCannoli vs Joshukid</h3>
-  <div class="meta"><span>Sep 2, 2026</span><span class="result result-draw">DRAW</span><span>Draw by agreement</span><span>White</span><span>10+0 rapid</span><span>26 moves</span></div>
-  <div class="facts"><div><span class="label">Opponent:</span> Joshukid</div><div><span class="label">Game type:</span> Coach game</div><div><span class="label">Ratings:</span> 1197 vs 2317</div><div><span class="label">Opening:</span> Caro-Kann</div><div><span class="label">Time trouble:</span> Mild</div><div><span class="label">Time trouble began:</span> Below 5:00 on move 23</div><div><span class="label">Lowest known time:</span> 3:12 on move 26</div><div><span class="label">Main problem phase:</span> Middlegame — managing queenside pressure and the tactical simplification around moves 21–25</div><div><span class="label">Turning point:</span> The sequence 21...Nxe5 22.dxe5 Rxc3 23.Rb3 Rxf3 24.Rxa3 Rxa3 25.exf6 gxf6 radically simplified the position and determined the character of the ending.</div></div>
+  <div class="meta"><span>Sep 2, 2026</span><span class="result result-loss">LOSS</span><span>Resignation — user-reported training result; supplied PGN retains the original 1/2-1/2 result tag</span><span>White</span><span>10+0 rapid</span><span>26 moves</span></div>
+  <div class="facts"><div><span class="label">Opponent:</span> Joshukid</div><div><span class="label">Game type:</span> Coach game</div><div><span class="label">Ratings:</span> 1197 vs 2317</div><div><span class="label">Accuracy:</span> 86% (1 blunder)</div><div><span class="label">Opening:</span> Caro-Kann</div><div><span class="label">Time trouble:</span> Mild</div><div><span class="label">Time trouble began:</span> Below 5:00 after 23.Rb3</div><div><span class="label">Lowest known time:</span> 3:12 on move 26</div><div><span class="label">Main problem phase:</span> Middlegame — time management and calculation on the critical move 23</div><div><span class="label">Turning point:</span> <strong style="color:#dc3545">23.Rb3??</strong>. White spent about 1:36 on the move but missed the tactical consequence 23...Rxf3; <strong>23.Qf4</strong> was the engine&#x27;s best move.</div></div>
+  <h4>Mistakes</h4>
+  <ul><li><strong style="color:#d4a000">20.Rb2?!</strong> was the first meaningful slip. The engine evaluation moved from about -0.61 to -1.34. <strong>20.Re3</strong> was best. The move also took about 37 seconds, so this was an early point where extra thinking time did not produce the strongest decision.</li><li><strong style="color:#dc3545">23.Rb3??</strong> was the decisive blunder. The evaluation dropped from about -1.29 to -5.49; <strong>23.Qf4</strong> was best. This was also the longest think of the game, taking about 1:36 and reducing the clock from 5:12 to 3:36.</li><li>The key time-management issue was therefore not simply playing too quickly. On the most important position of the game, substantial time was spent but the tactical consequences of <strong>23...Rxf3</strong> were still missed.</li></ul>
   <h4>What went well</h4>
-  <ul><li>Drew a 10-minute coach game against a 2317-rated FM.</li><li>Stayed above five minutes through move 22, so the clock did not become a problem until the major tactical sequence late in the game.</li><li>Navigated the forcing sequence beginning with 21...Nxe5 and the queen/rook exchanges on moves 23–25 without the game ending tactically; the game ultimately reached an agreed draw.</li></ul>
+  <ul><li><strong>86% accuracy</strong> against a 2317-rated FM.</li><li>The position remained close to equal through most of the first 19 moves; after 19...Rac8 the engine evaluation was only about -0.61.</li><li>Clock usage was controlled for most of the game. White still had 5:12 after move 22, so there was enough time available for the critical decision on move 23.</li><li>The game provided a useful time-management training example because the decisive error came during a long think rather than from being forced to move instantly.</li></ul>
   <h4>Primary reason for result</h4>
-  <p>Draw agreed after a forcing simplification that traded both queens and one rook from each side, leaving a materially imbalanced rook-and-knight-versus-rook position with Black holding extra pawns.</p>
+  <p>23.Rb3?? was a decisive tactical blunder after a long think, allowing 23...Rxf3 and changing the evaluation from about -1.29 to -5.49. The game is counted as a loss by resignation per the user&#x27;s training record.</p>
   <h4>Main takeaway</h4>
-  <p>Review the calculation around 23.Rb3 with Josh. It was the critical decision of the game and also the longest think, costing about 1:36; coach feedback should determine whether that time was well spent and whether a stronger practical choice was available.</p>
-  <div class="tags"><span class="tag">Calculation on critical moves</span><span class="tag">Time allocation on critical moves</span><span class="tag">Tactical simplification</span><span class="tag">Queenside pressure</span><span class="tag">Playing stronger opposition</span><span class="tag">Caro-Kann handling</span></div>
+  <p>For time management, the goal is not merely to spend more time on critical positions. When committing a large chunk of clock, use a structured final check of the opponent&#x27;s forcing replies — especially checks, captures, and threats — so the extra time improves decision quality.</p>
+  <div class="tags"><span class="tag">Time management</span><span class="tag">Time allocation on critical moves</span><span class="tag">Calculation on critical moves</span><span class="tag">Tactical oversights</span><span class="tag">Forcing-move recognition</span><span class="tag">Playing stronger opposition</span><span class="tag">Caro-Kann handling</span></div>
   <a class="game-link" href="https://www.chess.com/analysis/game/live/173915924466/review?move=0">View the game on Chess.com</a> <span aria-hidden="true">·</span> <a class="game-link pgn-link" href="pgn/chess.com-173915924466.pgn" download>Download PGN</a>
 </article>
 
