@@ -1,0 +1,59 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.09.03"]
+[Round "-"]
+[White "ChrisCannoli"]
+[Black "Joshukid"]
+[Result "1/2-1/2"]
+[CurrentPosition "2r3k1/p4p2/4ppp1/3p4/8/5N1P/r4PP1/1R4K1 w - - 0 27"]
+[Timezone "UTC"]
+[ECO "B13"]
+[ECOUrl "https://www.chess.com/openings/Caro-Kann-Defense-Exchange-Variation...6.Nf3-Bg4-7.O-O-e6"]
+[UTCDate "2026.09.03"]
+[UTCTime "01:57:12"]
+[WhiteElo "1197"]
+[BlackElo "2317"]
+[TimeControl "600"]
+[Termination "Game drawn by agreement"]
+[StartTime "01:57:12"]
+[EndDate "2026.09.03"]
+[EndTime "02:06:26"]
+[Link "https://www.chess.com/analysis/game/live/173915924466/review?move=0"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/55839960.fcd133a2.50x50o.29187bfa04cd.jpg"]
+[WhiteCountry "2"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/12198184.9e2560f0.50x50o.784c9acb05e5.jpeg"]
+[BlackCountry "2"]
+[BlackTitle "FM"]
+
+1. e4 {[%clk 0:10:00][%timestamp 1]} 1... c6 {[%clk 0:10:00][%timestamp 1]} 2.
+d4 {[%clk 0:09:56.8][%timestamp 32]} 2... d5 {[%clk 0:09:58.5][%timestamp 15]}
+3. exd5 {[%clk 0:09:54.6][%timestamp 22]} 3... cxd5 {[%clk 0:09:57.5][%timestamp
+10]} 4. Bd3 {[%clk 0:09:49][%timestamp 56]} 4... Nc6 {[%clk
+0:09:56.3][%timestamp 12]} 5. c3 {[%clk 0:09:46.4][%timestamp 26]} 5... Nf6
+{[%clk 0:09:54.4][%timestamp 19]} 6. Nf3 {[%clk 0:09:43.9][%timestamp 25]} 6...
+Bg4 {[%clk 0:09:52.8][%timestamp 16]} 7. O-O {[%clk 0:09:40.1][%timestamp 38]}
+7... e6 {[%clk 0:09:51.5][%timestamp 13]} 8. Bf4 {[%clk 0:09:31.3][%timestamp
+88]} 8... Bd6 {[%clk 0:09:47.6][%timestamp 39]} 9. Bxd6 {[%clk
+0:09:00.8][%timestamp 305]} 9... Qxd6 {[%clk 0:09:45.8][%timestamp 18]} 10. Nbd2
+{[%clk 0:08:58.6][%timestamp 22]} 10... O-O {[%clk 0:09:44.2][%timestamp 16]}
+11. h3 {[%clk 0:08:48.8][%timestamp 98]} 11... Bh5 {[%clk 0:09:39.3][%timestamp
+49]} 12. Qc2 {[%clk 0:08:42.6][%timestamp 62]} 12... Bg6 {[%clk
+0:09:37.2][%timestamp 21]} 13. Bxg6 {[%clk 0:08:30][%timestamp 126]} 13... hxg6
+{[%clk 0:09:35.2][%timestamp 20]} 14. Rfe1 {[%clk 0:08:20][%timestamp 100]}
+14... b5 {[%clk 0:09:26.1][%timestamp 91]} 15. Ne5 {[%clk 0:07:39.8][%timestamp
+402]} 15... Rfc8 {[%clk 0:09:19.6][%timestamp 65]} 16. Qd3 {[%clk
+0:07:02.8][%timestamp 370]} 16... b4 {[%clk 0:09:14.3][%timestamp 53]} 17. Qf3
+{[%clk 0:06:42.7][%timestamp 201]} 17... bxc3 {[%clk 0:09:09.3][%timestamp 50]}
+18. bxc3 {[%clk 0:06:39.4][%timestamp 33]} 18... Rc7 {[%clk
+0:09:00.9][%timestamp 84]} 19. Rab1 {[%clk 0:06:32.8][%timestamp 66]} 19... Rac8
+{[%clk 0:08:58][%timestamp 29]} 20. Rb2 {[%clk 0:05:55.7][%timestamp 371]} 20...
+Qa3 {[%clk 0:08:44.9][%timestamp 131]} 21. Reb1 {[%clk 0:05:31.1][%timestamp
+246]} 21... Nxe5 {[%clk 0:08:42.4][%timestamp 25]} 22. dxe5 {[%clk
+0:05:12.1][%timestamp 190]} 22... Rxc3 {[%clk 0:08:37.3][%timestamp 51]} 23. Rb3
+{[%clk 0:03:35.8][%timestamp 963]} 23... Rxf3 {[%clk 0:08:25.5][%timestamp 118]}
+24. Rxa3 {[%clk 0:03:30.2][%timestamp 56]} 24... Rxa3 {[%clk 0:08:25][%timestamp
+5]} 25. exf6 {[%clk 0:03:25.2][%timestamp 50]} 25... gxf6 {[%clk 0:08:22.6][%timestamp 24]} 26. Nf3 {[%clk 0:03:12][%timestamp 132]} 26... Rxa2
+{[%clk 0:08:17.8][%c_effect
+g8;square;g8;type;DrawBlack;animated;true,g1;square;g1;type;DrawWhite;animated;true][%timestamp
+48]} 1/2-1/2
