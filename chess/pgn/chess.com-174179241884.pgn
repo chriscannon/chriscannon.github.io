@@ -1,0 +1,45 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2026.09.08"]
+[Round "-"]
+[White "ChrisCannoli"]
+[Black "suryamarmer1970"]
+[Result "1-0"]
+[CurrentPosition "r2qkb1r/pppn1Bpp/5n2/4p3/4P3/1Q6/PPP2PPP/RNB1K2R b KQkq - 0 8"]
+[Timezone "UTC"]
+[ECO "C41"]
+[ECOUrl "https://www.chess.com/openings/Philidor-Defense-3.d4-Bg4-4.dxe5"]
+[UTCDate "2026.09.08"]
+[UTCTime "14:50:05"]
+[WhiteElo "1213"]
+[BlackElo "1210"]
+[TimeControl "900+10"]
+[Termination "ChrisCannoli won by resignation"]
+[StartTime "14:50:05"]
+[EndDate "2026.09.08"]
+[EndTime "14:50:05"]
+[Link "https://www.chess.com/analysis/game/live/174179241884/review?move=14"]
+[WhiteUrl "https://images.chesscomfiles.com/uploads/v1/user/55839960.fcd133a2.50x50o.29187bfa04cd.jpg"]
+[WhiteCountry "2"]
+[WhiteTitle ""]
+[BlackUrl "https://images.chesscomfiles.com/uploads/v1/user/579299396.173c8db3.50x50o.7818e5bec78a.jpg"]
+[BlackCountry "70"]
+[BlackTitle ""]
+
+1. e4 {[%clk 0:15:08][%timestamp 20]} 1... e5 {[%clk 0:15:07.9][%timestamp 21]}
+2. Nf3 {[%clk 0:15:15.3][%timestamp 27]} 2... d6 {[%clk 0:15:15.9][%timestamp
+20]} 3. d4 {[%clk 0:15:20.7][%timestamp 46]} 3... Bg4 $6 {[%clk
+0:15:15.9][%timestamp 100][%c_effect
+g4;square;g4;type;Inaccuracy;size;100%25;animated;false;persistent;true]} 4.
+dxe5 {[%clk 0:15:27.9][%timestamp 28]} 4... Bxf3 {[%clk 0:15:19.7][%timestamp
+62]} 5. Qxf3 {[%clk 0:15:29.4][%timestamp 85]} 5... dxe5 {[%clk
+0:15:24.5][%timestamp 52]} 6. Bc4 {[%clk 0:15:35.4][%timestamp 40]} 6... Nf6 $6
+{[%clk 0:15:07][%timestamp 275][%c_effect
+f6;square;f6;type;Inaccuracy;size;100%25;animated;false;persistent;true]} 7.
+Qb3 $1 {[%clk 0:15:18][%timestamp 274][%c_effect
+b3;square;b3;type;GreatFind;size;100%25;animated;true;persistent;true]} 7...
+Nbd7 $4 {[%clk 0:13:19][%timestamp 1180][%c_effect
+d7;square;d7;type;Blunder;size;100%25;animated;false;persistent;true]} 8. Bxf7+
+{[%clk 0:15:18][%c_effect
+e1;square;e1;type;Winner;animated;true,e8;square;e8;type;ResignBlack;animated;true][%timestamp
+100]} 1-0
